@@ -42,8 +42,8 @@ private static final String TAG = "MainActity";
 
     private void setupViewPager(ViewPager viewPager){
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Tab1Fragment(), "TAB1");
-        adapter.addFragment(new Tab2Fragment(), "TAB2");
+        adapter.addFragment(new Tab1Fragment(), "MOTORES");
+        adapter.addFragment(new Tab2Fragment(), "ALARME");
         viewPager.setAdapter(adapter);
     }
 

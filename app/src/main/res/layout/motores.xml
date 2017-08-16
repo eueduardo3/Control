@@ -12,18 +12,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="70dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="33dp"
-            android:layout_marginEnd="33dp">
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
 
             <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="350dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-                android:orientation="vertical">
+
+                android:orientation="vertical"
+                android:weightSum="1">
 
                 <ImageButton
                     android:id="@+id/imageButton8"
@@ -34,6 +33,11 @@
 
                     app:srcCompat="@drawable/cimaazul" />
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.48" />
+
                 <ImageButton
                     android:id="@+id/imageButton7"
                     android:layout_width="80dp"
@@ -41,12 +45,18 @@
                     android:scaleType="fitCenter"
                     android:background="@null"
 
+
                     app:srcCompat="@drawable/baixoazul" />
             </LinearLayout>
 
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.48" />
+
             <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="350dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageButton
@@ -56,6 +66,10 @@
                     android:scaleType="fitCenter"
                     android:background="@null"
                     app:srcCompat="@drawable/cimapreto" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.48" />
 
                 <ImageButton
                     android:id="@+id/imageButton9"
@@ -66,9 +80,14 @@
                     app:srcCompat="@drawable/baixopreto" />
             </LinearLayout>
 
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.48" />
+
             <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="350dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <ImageButton
@@ -78,6 +97,10 @@
                     android:scaleType="fitCenter"
                     android:background="@null"
                     app:srcCompat="@drawable/cimavermelho" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.48" />
 
                 <ImageButton
                     android:id="@+id/imageButton11"
