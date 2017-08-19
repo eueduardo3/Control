@@ -22,7 +22,7 @@ public class Tab2Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.alarme,container,false);
 
-        textTab2 = (TextView)view.findViewById(R.id.textTab2);
+
 
         return view;
     }
