@@ -28,9 +28,9 @@
                     android:id="@+id/imageButton8"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:scaleType="fitCenter"
                     android:background="@null"
-
+                    android:onClick="botaocima"
+                    android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cimaazul" />
 
                 <Space
@@ -44,8 +44,6 @@
                     android:layout_height="80dp"
                     android:scaleType="fitCenter"
                     android:background="@null"
-
-
                     app:srcCompat="@drawable/baixoazul" />
             </LinearLayout>
 
@@ -108,7 +106,6 @@
                     android:layout_height="80dp"
                     android:scaleType="fitCenter"
                     android:background="@null"
-
                     app:srcCompat="@drawable/baixovermelho" />
             </LinearLayout>
 
