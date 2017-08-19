@@ -61,8 +61,8 @@
                     android:id="@+id/imageButton10"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:scaleType="fitCenter"
                     android:background="@null"
+                    android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cimapreto" />
                 <Space
                     android:layout_width="match_parent"
@@ -92,8 +92,8 @@
                     android:id="@+id/imageButton12"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:scaleType="fitCenter"
                     android:background="@null"
+                    android:scaleType="fitCenter"
                     app:srcCompat="@drawable/cimavermelho" />
                 <Space
                     android:layout_width="match_parent"

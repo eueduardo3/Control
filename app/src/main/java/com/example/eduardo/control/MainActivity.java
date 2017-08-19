@@ -20,7 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,10 +37,11 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import java.io.UnsupportedEncodingException;
 
 public class MainActivity extends AppCompatActivity {
-private static final String TAG = "MainActity";
+    private static final String TAG = MainActivity.class.getSimpleName();
     private SectionsPageAdapter mSectionsPageAdapter;
     private ViewPager mViewpager;
 
+    public boolean alarmeAtivado;
 
         // Declarações e inicializações para o MQTT
         private String clientId = MqttClient.generateClientId();
@@ -64,7 +65,6 @@ private static final String TAG = "MainActity";
                 Log.d(TAG, topic + ": " + msg);
                 if (topic.equals("eueduardoCorrente")) { // Apresentada graficamente
                     int correnteComoInteiro = Integer.parseInt(msg);
-
                 }
             }
 
@@ -101,6 +101,9 @@ private static final String TAG = "MainActity";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         initMQTT();
         connectMQTT();
 
@@ -178,9 +181,6 @@ private static final String TAG = "MainActity";
         }
 
     }
-
-
-
 
 
     private void setupViewPager(ViewPager viewPager){
